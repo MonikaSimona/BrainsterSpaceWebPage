@@ -5,7 +5,7 @@ import { ImLinkedin } from 'react-icons/im'
 import Logo from './Logo'
 function Footer() {
     return (
-        <div className="Footer">
+        <div className="Footer footer absolute-bottom">
             <div className="row mx-5 my-5 py-3">
                 <div className="col-md-3 mb-5 mt-3 ">
                     <span className="boldText mb-2  ">Корисни Линкови</span>
@@ -19,10 +19,12 @@ function Footer() {
 
                 <div className="col-md-3 mb-5 mt-3"><span className="boldText mb-3">Социјални Мрежи</span>
                     <div className="d-flex ">
-
-                        <FaFacebook className="icon facebook" />
-                        <ImLinkedin className="icon linkedin" />
-                        <FiInstagram className="icon instagram" />
+                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/brainster.co"><FaFacebook className="icon facebook" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/school/brainster-co/"><ImLinkedin className="icon linkedin" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/brainsterco/"><FiInstagram className="icon instagram" /></a>
+                        
+                        
+                        
                     </div>
 
                 </div>
@@ -30,7 +32,7 @@ function Footer() {
                     <Logo className="logo mb-5 " width="80" height="80"/>
                 </div>
             </div>
-            <div className="bottom-section">
+            <div className="bottom-section footer absolute-bottom">
                 <p>COPYRIGHT&copy;BrainsterSpace. All Rights Reserved</p>
             </div>
         </div>
