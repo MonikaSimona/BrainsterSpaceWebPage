@@ -21,7 +21,7 @@ function Navbar() {
                             <NavLink className="text m-4" to="/prostor_za_nastani">ПРОСТОР ЗА НАСТАНИ</NavLink>
                             <NavLink className="text m-4" to="/partnerstva">ПАРТНЕРСТВА</NavLink></div>
 
-                        <button className="ml-auto black-button" >+ ПРИКЛУЧИ СЕ</button> </div>
+                        <button className="ml-auto black-button-navbar " >+ ПРИКЛУЧИ СЕ</button> </div>
                 </div>
             </div>
 

@@ -1,22 +1,13 @@
 import React from 'react'
 import SingleCard from './SingleCard'
 
-function CardsContainer({title}) {
+function CardsContainer({title,children}) {
     return (
         <div>
             <h1 className="title">{title}</h1>
-            <div className="container mb-5  ">
+            <div className="container-fluid  mb-5  ">
         
-            <div className="row mb-5">
-                <SingleCard img="coworking"/>
-                <SingleCard/>
-                <SingleCard/>
-            </div>
-            <div className="row">
-                <SingleCard/>
-                <SingleCard/>
-                <SingleCard/>
-            </div>
+          {children}
         </div>
         </div>
         
