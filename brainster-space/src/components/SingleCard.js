@@ -5,8 +5,8 @@ import {IoArrowForwardCircleOutline} from 'react-icons/io5'
 function SingleCard({title,content,img}) {
    
     return (
-        <div className="col-md-4 d-flex"  >
-            <Card >
+        <div className="col-lg-4 col-md-6 d-flex"  >
+            <Card className="mb-4" >
             
         <Card.Img variant="top" src={require(`../assets/img/${img}.jpg`).default} style={{height:'350px'}}/>
                 <Card.Body>

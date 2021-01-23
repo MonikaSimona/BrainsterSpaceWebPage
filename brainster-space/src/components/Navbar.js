@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import Logo from './Logo'
+import HomePage from './HomePage'
 
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
             <div className="container-fluid ">
                 <div className="row mx-5 mt-3">
                     <div className="col-md d-flex m-3 align-items-center">
-                        <NavLink className="mr-auto ml-2" to="/">
+                        <NavLink className="mr-auto ml-2" to="/" >
                           <Logo width="50" height="50"/>
                            </NavLink>
 
