@@ -198,6 +198,10 @@ li {
   font-size: 2rem;
 }
 
+.marg{
+  padding-bottom: 8rem;
+}
+
 .img-overlay{
   position: absolute;
   top: 0;
@@ -227,5 +231,45 @@ li {
 .iconSize{
   font-size: 20px;
 }
+
+.black-white-div{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 1.9rem;
+  margin: 3px;
+
+}
+.yellow-icon{
+  color: #fcd232;
+  align-self: center;
+  margin-right: 5px;
+  font-size: 2rem;
+}
+
+@media (max-width:576px){
+.main{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.marg{
+  padding-bottom: 20px;
+  }
+}
+
+@media (max-width:1620px){
+  .marg{
+    padding-bottom: 5rem;
+    }
+}
+@media (max-width:980px){
+  .marg{
+    padding-bottom: 3rem;
+    }
+}
+
 
 

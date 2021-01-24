@@ -27,8 +27,8 @@ function HomePage() {
             </CardsContainer>
             <SectionImgRight title="Компании" img="banner_img" >
             
-                <button className="black-button mr-2 mb-md-2 p-2">АКАДЕМИИ</button>
-                <button className="yellow-button mb-md-2 p-2">ЗА КОМПАНИИ</button>
+                <button className="black-button mr-2 mb-md-2  mb-sm-2 mb-2 p-2">АКАДЕМИИ</button>
+                <button className="yellow-button mb-md-2 mb-sm-2 mb-2 p-2">ЗА КОМПАНИИ</button>
             </SectionImgRight>
             <CardsContainer title="Настани">
             <div className="row mb-5">
@@ -37,16 +37,16 @@ function HomePage() {
                 <SingleCard img="hristijan" title="Deep Dive into Data Science"/>
             </div>
             <div className="d-flex justify-content-end ">
-            <button className="black-button px-3 py-2 d-flex align-items-center"> <BiCalendar className="mr-2 mb-md-2"/>КАЛЕНДАР НА НАСТАНИ</button>
+            <button className="black-button px-3 py-2 d-flex align-items-center"> <BiCalendar className="mr-2 mb-md-2 mb-sm-2 mb-2"/>КАЛЕНДАР НА НАСТАНИ</button>
             </div>
             
         <SectionImgLeft title="Coworking" img="coworking">
-        <button className="black-button mr-2 p-2 text-linetrough mb-md-2">РЕЗЕРВИРАЈ МЕСТО</button>
+        <button className="black-button mr-2 p-2 text-linetrough mb-md-2 mb-sm-2 mb-2">РЕЗЕРВИРАЈ МЕСТО</button>
         </SectionImgLeft>
 
             </CardsContainer>
             <SectionImgRight title="Простор за настани" img="prostor_za_nastani">
-            <button className="black-button p-2 mb-md-2"> <IoArrowForward/> ВИДИ ГО ПРОСТОРОТ </button>
+            <button className="black-button p-2 mb-md-2 mb-sm-2 mb-2"> <IoArrowForward/> ВИДИ ГО ПРОСТОРОТ </button>
             </SectionImgRight>
 
             <BottomBanner title="Партнери" content="Имаш идеја? Отворени сме за соработка">
