@@ -2,6 +2,7 @@
   margin: 0 100px 0 100px;
 }
 .text {
+  display: inline-block;
   color: black;
   font-weight: 700;
 }
@@ -9,10 +10,22 @@
   color: black;
   text-decoration: none;
 }
+
+.card-line::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fcd232;
+  transition: width .5s;
+}
+.card-line:hover::after{
+  width: 100%;
+  transition: width .5s;
+}
 .black-button-navbar{
   background-color: black;
   color: #fcd232;
-  
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px 7px 7px 5px;
@@ -20,35 +33,36 @@
 .black-button {
   background-color: black;
   color: #fcd232;
-  
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-radius: 5px;
   padding: 5px 7px 7px 5px;
-  /* box-shadow: 25px  15px 70px rgba(0, 0, 0, 0.425); */
   box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
--webkit-box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
+  -webkit-box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
 -moz-box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
+transition: background-color .5s;
 }
 .yellow-button {
   background-color: #fcd232;
   color: black;
-  
-  border: 1px solid #fcd232;
+  border: 1px solid transparent;
   border-radius: 5px;
   padding: 5px 7px 7px 5px;
   box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
   -webkit-box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
   -moz-box-shadow: 17px 31px 65px -1px rgba(158,158,158,0.75);
+  transition: background-color .5s;
 }
 
 
 .black-button:hover {
   background-color: rgba(0, 0, 0, 0.767);
-  border-color: rgba(0, 0, 0, 0.767);
+  transition: background-color  .5s;
+  
 }
+
 .yellow-button:hover{
-  background-color: #fcd43288;
-  border-color:#fcd43288;
+  background-color: #c2a327;
+  transition: background-color  .5s;
 }
 .Footer {
   width: 100%;
@@ -112,9 +126,7 @@ li {
   display: inline-block;
   margin-left: 85%;
 }
-.arrow-btn:hover {
-  color: rgba(0, 0, 0, 0.671);
-}
+
 
 .Banner {
   background-image: url("./assets/img/banner_img.jpg");
@@ -176,6 +188,10 @@ li {
 }
 .text-linetrough{
   text-decoration: line-through;
+}
+.btn-linetrough:hover{
+  background-color: black;
+  cursor: default;
 }
 .pill{
   display: inline-block;
@@ -247,6 +263,21 @@ li {
   align-self: center;
   margin-right: 5px;
   font-size: 2rem;
+}
+
+.card-lift{
+  -webkit-transition-duration: 0.4s;
+}
+.card-lift:hover{
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-link{
+  color: black;
+}
+.card-link:hover{
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width:576px){

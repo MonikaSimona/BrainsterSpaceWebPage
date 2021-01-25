@@ -1,7 +1,5 @@
-import React from 'react'
 import CardsContainer from './CardsContainer'
 import SectionImgRight from './SectionImgRight'
-import SingleCard from './SingleCard'
 import SingleCardSpace from './SingleCardSpace'
 import {IoMdPlanet} from 'react-icons/io'
 import {IoFastFood} from 'react-icons/io5'
@@ -13,9 +11,24 @@ import {IoGitNetworkSharp} from 'react-icons/io5'
 import {RiCameraLensFill} from 'react-icons/ri'
 import {IoLogoFacebook} from 'react-icons/io'
 
-function EventSpacePage() {
-    return (
-        <div className="EventSpacePage">
+
+import React, { PureComponent } from 'react'
+
+class EventSpacePage extends PureComponent {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            
+        }
+    }
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+
+    render() {
+        return (
+            <div className="EventSpacePage">
             <div className="main">
                 <SectionImgRight title="Простор за настани" img="prostor_za_nastani">
                     <button className="black-button px-3 mb-md-2 mb-sm-2">+ БУКИРАЊЕ</button>
@@ -123,7 +136,10 @@ function EventSpacePage() {
                 </div>
             </div>
         </div>
-    )
+    
+        )
+    }
 }
 
 export default EventSpacePage
+

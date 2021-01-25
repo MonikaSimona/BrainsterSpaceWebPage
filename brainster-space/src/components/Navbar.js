@@ -16,11 +16,11 @@ function Navbar() {
                            </NavLink>
 
                         <div className="mt-2">
-                            <NavLink className="text m-4" to="/nastani">НАСТАНИ</NavLink>
-                            <NavLink className="text m-4" to="/co_working">CO-WORKING</NavLink>
-                            <NavLink className="text m-4" to="/akademii">АКАДЕМИИ</NavLink>
-                            <NavLink className="text m-4" to="/prostor_za_nastani">ПРОСТОР ЗА НАСТАНИ</NavLink>
-                            <NavLink className="text m-4" to="/partnerstva">ПАРТНЕРСТВА</NavLink></div>
+                            <NavLink className="text m-4 card-line" to="/nastani">НАСТАНИ</NavLink>
+                            <NavLink className="text m-4 card-line" to="/co_working">CO-WORKING</NavLink>
+                            <NavLink className="text m-4 card-line" to="/akademii">АКАДЕМИИ</NavLink>
+                            <NavLink className="text m-4 card-line" to="/prostor_za_nastani">ПРОСТОР ЗА НАСТАНИ</NavLink>
+                            <NavLink className="text m-4 card-line" to="/partnerstva">ПАРТНЕРСТВА</NavLink></div>
 
                         <button className="ml-auto black-button-navbar " >+ ПРИКЛУЧИ СЕ</button> </div>
                 </div>

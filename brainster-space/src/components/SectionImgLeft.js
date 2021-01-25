@@ -1,8 +1,8 @@
 import React from 'react'
 
-function SectionImgLeft({ title, img, children }) {
+function SectionImgLeft({ title, img, children,id }) {
     return (
-        <div className="container-fluid my-5">
+        <div className="container-fluid my-5" id={id}>
             <div className="row">
                 <div className="col-lg-7 col-md-12">
 

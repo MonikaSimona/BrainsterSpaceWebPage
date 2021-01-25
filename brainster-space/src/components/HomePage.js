@@ -16,11 +16,11 @@ function HomePage() {
        
             <CardsContainer title="За Нас">
             <div className="row ">
-                <SingleCard img="edukacija1" title="Едукација"/>
-                <SingleCard img="nastani" title="Настани"/>
-                <SingleCard img="coworking" title="Coworking"/>
+                <SingleCard img="edukacija1" title="Едукација" link="https://brainster.co"/>
+                <SingleCard img="nastani" title="Настани" link="/nastani"/>
+                <SingleCard img="coworking" title="Coworking" link="/coworking"/>
            
-                <SingleCard img="prostor_za_nastani" title="Простор за настани"/>
+                <SingleCard img="prostor_za_nastani" title="Простор за настани" link="prostor_za_nastani" />
                 <SingleCard img="tech-kompanii" title="Партнерства со Tech компании"/>
                 <SingleCard img="edukacija2" title="Иновации за компании"/>
             </div>
@@ -40,8 +40,8 @@ function HomePage() {
             <button className="black-button px-3 py-2 d-flex align-items-center"> <BiCalendar className="mr-2 mb-md-2 mb-sm-2 mb-2"/>КАЛЕНДАР НА НАСТАНИ</button>
             </div>
             
-        <SectionImgLeft title="Coworking" img="coworking">
-        <button className="black-button mr-2 p-2 text-linetrough mb-md-2 mb-sm-2 mb-2">РЕЗЕРВИРАЈ МЕСТО</button>
+        <SectionImgLeft title="Coworking" img="coworking" id="coworking">
+        <button className="black-button mr-2 p-2 text-linetrough btn-linetrough mb-md-2 mb-sm-2 mb-2">РЕЗЕРВИРАЈ МЕСТО</button>
         </SectionImgLeft>
 
             </CardsContainer>

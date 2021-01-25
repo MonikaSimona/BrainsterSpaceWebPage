@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import AcadamiesPage from './components/AcadamiesPage';
 import EventSpacePage from './components/EventSpacePage';
+import Events from './components/Events';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route exact path="/" component={HomePage}/>
           <Route path="/akademii" component={AcadamiesPage}/>
           <Route path="/prostor_za_nastani" component={EventSpacePage}/>
+          <Route path="/nastani" component={Events}/>
+          
         </Switch>
         <Footer/>
       </Router>
