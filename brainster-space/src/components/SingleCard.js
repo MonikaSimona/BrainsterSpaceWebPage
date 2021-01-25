@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 import { IoArrowForwardCircleOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
-function SingleCard({ title, content, img, link }) {
+function SingleCard({ title, content, img, link,onClick }) {
 
     return (
         <div className="col-lg-4 col-md-6 col-sm-12 d-flex"  >
@@ -21,7 +21,7 @@ function SingleCard({ title, content, img, link }) {
 
                     </Card.Body>
                 </Card>
-            </a>):(<Link to={link} className="card-link ">
+            </a>):(<Link to={link} className="card-link" onClick={onClick}>
                 <Card className="mb-4 card-lift" >
 
                     <Card.Img variant="top" src={require(`../assets/img/${img}.jpg`).default} style={{ height: '350px' }} />

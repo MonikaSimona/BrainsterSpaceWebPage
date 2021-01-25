@@ -1,11 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Button } from 'react-bootstrap'
 import Logo from './Logo'
-import HomePage from './HomePage'
+import Container from './FormModal/Container'
 
 
 function Navbar() {
+    const buttonText = " + ПРИКЛУЧИ СЕ ";
+    const onSubmit = (event) =>{
+        event.preventDefault(event);
+        console.log(event.target.name.value);
+        console.log(event.target.email.value);
+    }
     return (
         <div className="Navbar ">
             <div className="container-fluid ">
@@ -16,13 +21,13 @@ function Navbar() {
                            </NavLink>
 
                         <div className="mt-2">
-                            <NavLink className="text m-4 card-line" to="/nastani">НАСТАНИ</NavLink>
-                            <NavLink className="text m-4 card-line" to="/co_working">CO-WORKING</NavLink>
-                            <NavLink className="text m-4 card-line" to="/akademii">АКАДЕМИИ</NavLink>
-                            <NavLink className="text m-4 card-line" to="/prostor_za_nastani">ПРОСТОР ЗА НАСТАНИ</NavLink>
-                            <NavLink className="text m-4 card-line" to="/partnerstva">ПАРТНЕРСТВА</NavLink></div>
+                            <NavLink className="text text-bold m-4 card-line" to="/nastani">НАСТАНИ</NavLink>
+                            <NavLink className="text text-bold m-4 card-line" to="/co_working">CO-WORKING</NavLink>
+                            <NavLink className="text text-bold m-4 card-line" to="/akademii">АКАДЕМИИ</NavLink>
+                            <NavLink className="text text-bold m-4 card-line" to="/prostor_za_nastani">ПРОСТОР ЗА НАСТАНИ</NavLink>
+                            <NavLink className="text text-bold m-4 card-line" to="/partnerstva">ПАРТНЕРСТВА</NavLink></div>
 
-                        <button className="ml-auto black-button-navbar " >+ ПРИКЛУЧИ СЕ</button> </div>
+                            <Container triggerText={buttonText} onSubmit={onSubmit} margin="ml-lg-auto" /> </div>
                 </div>
             </div>
 
