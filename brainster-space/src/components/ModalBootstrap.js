@@ -6,7 +6,7 @@ function ModalBootstrap({handleClose,handleSubmit}) {
     return (
         <>
         <div
-        className="d-flex align-items-center justify-content-center"
+        className="d-flex align-items-center justify-content-center modalBootstrap"
         style={{ height: "100vh" }}
         >
         

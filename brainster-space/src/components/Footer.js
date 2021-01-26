@@ -23,7 +23,7 @@ function Footer() {
     return (
         <div className="Footer footer absolute-bottom">
             <div className="row mx-5 my-5 py-3">
-                <div className="col-md-3 mb-5 mt-3 ">
+                <div className="col-lg-3 col-md-4 col-sm-12  col-xs-12 order-lg-1 order-md-1 order-sm-2 order-xs-2 mb-5 mt-3 ">
                     <span className="text-bold mb-2  ">Корисни Линкови</span>
                     <ul>
 
@@ -36,14 +36,14 @@ function Footer() {
                             </li>
                         </OverlayTrigger>
                         <li>Отворени Позиции</li>
-                        <a href="https://medium.com/wearelaika/brainster-space-the-" targer="_blank" className="text">      <li>Галерија</li>
+                        <a href="https://medium.com/wearelaika/brainster-space-the-" target="_blank" rel="noreferrer"className="text">      <li>Галерија</li>
                         </a>
                         <li>Календар</li>
                     </ul></div>
 
 
 
-                <div className="col-md-3 mb-5 mt-3"><span className="text-bold mb-3">Социјални Мрежи</span>
+                <div className="col-lg-3 col-md-4 col-sm-12 col-xs-12 order-lg-2 order-md-2 order-sm-3 order-xs-3 mb-5 mt-3"><span className="text-bold mb-3">Социјални Мрежи</span>
                     <div className="d-flex ">
                         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/brainster.co"><FaFacebook className="icon facebook" /></a>
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/school/brainster-co/"><ImLinkedin className="icon linkedin" /></a>
@@ -54,7 +54,10 @@ function Footer() {
                     </div>
 
                 </div>
-                <div className="col-md-6 d-flex justify-content-end align-items-center mb-5 ">
+                <div className="col-lg-6 col-md-4 col-sm-12 col-xs-12 order-lg-3 order-md-3 order-sm-1 order-1 d-flex justify-content-lg-end justify-content-md-end
+                justify-content-sm-start
+                justify-content-xs-start
+                align-items-center mb-5 ">
                     <Logo className="logo mb-5 " width="80" height="80" />
                 </div>
             </div>
