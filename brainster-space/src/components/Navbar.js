@@ -1,24 +1,32 @@
-
 import { NavLink } from 'react-router-dom'
 import Logo from './Logo'
-import Container from './FormModal/Container'
 
 import React, { PureComponent } from 'react'
 import ModalBootstrap from './ModalBootstrap'
+import JoinForm from './Forms/JoinForm'
+import { Link } from 'react-scroll'
+
 
 class Navbar extends PureComponent {
     constructor(props) {
         super(props)
 
         this.state = {
-            isOpen: false
+            isOpen: false,
+            fromOutside: false,
         }
     }
 
-    openModal = () => this.setState({isOpen:true})
+    openModal = () => this.setState({ isOpen: true })
     closeModal = () => this.setState({ isOpen: false });
-    handleSubmit = () => {
-
+    handleSubmit = (e) => {
+        e.preventDefault();
+    }
+    fromOutsite = () => {
+        this.setState({ fromOutside: true })
+    }
+    fromHome = () => {
+        this.setState({ fromOutside: false })
     }
 
     render() {
@@ -27,20 +35,25 @@ class Navbar extends PureComponent {
                 <div className="container-fluid ">
                     <div className="row mx-5 mt-3">
                         <div className="col-md d-flex m-3 align-items-center">
-                            <NavLink className="mr-auto ml-2" to="/" >
+                            <NavLink className="mr-auto ml-2" to="/" onClick={this.fromHome} >
                                 <Logo width="50" height="50" />
                             </NavLink>
 
                             <div className="mt-2">
-                                <NavLink className="text text-bold m-4 card-line" to="/nastani">НАСТАНИ</NavLink>
-                                <NavLink className="text text-bold m-4 card-line" to="/co_working">CO-WORKING</NavLink>
-                                <NavLink className="text text-bold m-4 card-line" to="/akademii">АКАДЕМИИ</NavLink>
-                                <NavLink className="text text-bold m-4 card-line" to="/prostor_za_nastani">ПРОСТОР ЗА НАСТАНИ</NavLink>
-                                <NavLink className="text text-bold m-4 card-line" to="/partnerstva">ПАРТНЕРСТВА</NavLink></div>
-                                <button className="black-button-navbar ml-lg-auto"  onClick={this.openModal}> + ПРИКЛУЧИ СЕ</button>
-                                {this.state.isOpen ? <ModalBootstrap handleClose={this.closeModal} isOpen={this.state.isOpen} handleSubmit={this.handleSubmit} /> : null}
+                                <NavLink className="text text-bold m-4 card-line" to="/nastani" onClick={this.fromOutsite}>НАСТАНИ</NavLink>
 
-                            {/* <Container triggerText={buttonText} onSubmit={onSubmit} margin="ml-lg-auto" /> </div> */}
+                                {this.state.fromOutside
+                                    ? (<NavLink className="text text-bold m-4 card-line" to="/#coworking" onClick={this.fromHome}>CO_WORKING</NavLink>)
+                                    : (<Link to="#coworking" smooth={true} spy={true} className="text text-bold m-4 card-line" style={{ cursor: 'pointer' }} >CO-WORKING </Link>)}
+
+                                <NavLink className="text text-bold m-4 card-line" to="/akademii" onClick={this.fromOutsite}>АКАДЕМИИ</NavLink>
+                                <NavLink className="text text-bold m-4 card-line" to="/prostor_za_nastani" onClick={this.fromOutsite}>ПРОСТОР ЗА НАСТАНИ</NavLink>
+                                <p className="text text-bold m-4 card-line" style={{cursor:'pointer'}} onClick={() => {this.openModal()}}>ПАРТНЕРСТВА</p>
+                                {this.state.isOpen ? <ModalBootstrap handleClose={this.closeModal} isOpen={this.state.isOpen} handleSubmit={this.handleSubmit} > <JoinForm /></ModalBootstrap> : null}</div>
+                            <button className="black-button ml-lg-auto" onClick={this.openModal}> + ПРИКЛУЧИ СЕ</button>
+                            {this.state.isOpen ? <ModalBootstrap handleClose={this.closeModal} isOpen={this.state.isOpen} handleSubmit={this.handleSubmit} > <JoinForm /></ModalBootstrap> : null}
+
+
                         </div>
                     </div>
 

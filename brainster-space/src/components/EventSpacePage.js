@@ -25,6 +25,7 @@ class EventSpacePage extends PureComponent {
     componentDidMount(){
         window.scrollTo(0,0);
     }
+    
 
     render() {
         return (
@@ -67,27 +68,27 @@ class EventSpacePage extends PureComponent {
                             <div className="row">
                                 <div className="col">
                                     <div className="row">
-                                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12 mb-lg-2 mr-lg-2 my-sm-2  p-lg-0">
-                                            <img className="small-image" src={require(`../assets/img/6.jpg`).default} width="99%" height="100%" alt="" />
+                                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12  my-sm-2 mb-lg-2  ">
+                                            <img className="small-image box-image" src={require(`../assets/img/6.jpg`).default} width="100%" height="100%" alt="" />
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 
-                                        my-sm-2  p-lg-0">
-                                            <img className="small-image" src={require(`../assets/img/4.jpg`).default} 
-                                            width="97%" height="100%"
+                                        my-sm-2 ">
+                                            <img className="small-image box-image" src={require(`../assets/img/4.jpg`).default} 
+                                            width="100%" height="100%"
                                             alt="" />
                                         </div>
-                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-sm-2 p-lg-0">
-                                            <img className="small-image" src={require(`../assets/img/1.jpg`).default}
-                                            width="97%" height="100%"
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-sm-2 p-lg-0 pr-lg-3 pl-lg-1  ">
+                                            <img className="small-image box-image" src={require(`../assets/img/1.jpg`).default}
+                                            width="100%" height="100%"
                                              alt="" />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6  col-md-6 col-sm-12 col-xs-12 my-sm-2 p-lg-0   ">
-                                    <img  className="small-image" src={require(`../assets/img/3.jpg`).default}
-                                    width="98%" height="100%"
+                                <div className="col-lg-6  col-md-6 col-sm-12 col-xs-12 my-sm-2  pl-lg-0 ml-lg-1   ">
+                                    <img  className="small-image box-image" src={require(`../assets/img/3.jpg`).default}
+                                    width="100%" height="100%"
                                      alt="" />
                                 </div>
                             </div>

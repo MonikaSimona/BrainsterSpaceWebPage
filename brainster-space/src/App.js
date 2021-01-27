@@ -7,25 +7,44 @@ import HomePage from './components/HomePage';
 import AcadamiesPage from './components/AcadamiesPage';
 import EventSpacePage from './components/EventSpacePage';
 import Events from './components/Events';
+import { IoArrowUpOutline } from 'react-icons/io5';
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        
-        <Switch>
-        
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/akademii" component={AcadamiesPage}/>
-          <Route path="/prostor_za_nastani" component={EventSpacePage}/>
-          <Route path="/nastani" component={Events}/>
+import React, { PureComponent } from 'react'
+
+class App extends PureComponent {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      
+    }
+  }
+  toTop = () => {
+    window.scrollTo(0,0);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <Navbar />
           
-        </Switch>
-        <Footer/>
-      </Router>
-    </div>
-  );
+          <Switch>
+            
+            <Route exact path="/" component={HomePage}/>
+            <Route path="/akademii" component={AcadamiesPage}/>
+            <Route path="/prostor_za_nastani" component={EventSpacePage}/>
+            <Route path="/nastani" component={Events}/>
+            
+          </Switch>
+          <div className=" backToTop d-flex justify-content-center align-items-center" onClick={this.toTop}><IoArrowUpOutline /> </div>
+          <Footer/>
+        </Router>
+      </div>
+    );
+  }
 }
+
+
 
 export default App;

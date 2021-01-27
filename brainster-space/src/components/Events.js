@@ -2,7 +2,7 @@ import React from 'react'
 
 function Events() {
     return (
-        <div className="Events">Nastani</div>
+        <div className="Events">Календар</div>
     )
 }
 

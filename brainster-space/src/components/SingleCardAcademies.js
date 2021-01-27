@@ -5,14 +5,14 @@ import {FaRegCalendarAlt} from 'react-icons/fa'
 import {FiClock} from 'react-icons/fi'
 import {FaHandshake} from 'react-icons/fa'
  
-function SingleCardAcademies({title,img,content,color}) {
+function SingleCardAcademies({title,img,content,color,link}) {
     return (
         <div className="col-lg-4 col-md-6 col-sm-12 ">
-        <a href="#">
-        <Card className="text-white d-flex mb-3 ">
-                <Card.Img  style={{height:'400px'}} src={require(`../assets/img/${img}.jpg`).default} alt="Card image" />
-                <Card.ImgOverlay className={`img-overlay ${color}`}>
-                    <Card.Title className="text-bold marg" style={{fontSize:'2.5rem'}}>{title}</Card.Title>
+        <a href={link} target="_blank" rel="noreferrer">
+        <Card className="text-white d-flex mb-3 card-lift scale ">
+                <Card.Img className=""  style={{height:'400px'}} src={require(`../assets/img/${img}.jpg`).default} alt="Card image" />
+                <Card.ImgOverlay className={`img-overlay  ${color}`}>
+                    <Card.Title className="text-bold marg " style={{fontSize:'2.5rem'}}>{title}</Card.Title>
                     
                     <Card.Text >
                         <ul className="text-bold  " style={{fontSize:'1rem',fontWeight:'lighter'}}>
