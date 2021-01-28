@@ -32,7 +32,7 @@ class EventSpacePage extends PureComponent {
             <div className="EventSpacePage">
             <div className="main">
                 <SectionImgRight title="Простор за настани" img="prostor_za_nastani">
-                   <a href="#host"><button className="black-button px-3 mb-md-2 mb-sm-2">+ БУКИРАЈ НЕ</button></a> 
+                   <a href="#host"><button className="black-button px-3 mb-md-2 mb-sm-2 mb-2">+ БУКИРАЈ НЕ</button></a> 
                 </SectionImgRight>
                 <div className="container-fluid my-5">
                     <div className="row">
@@ -64,29 +64,29 @@ class EventSpacePage extends PureComponent {
 
                 <div className="container-fluid my-5">
                     <div className="row">
-                        <div className="col-lg-9 col-md-12 ">
+                        <div className="col-lg-9 col-md-12 col-sm-12 col-12 ">
                             <div className="row">
                                 <div className="col">
                                     <div className="row">
-                                        <div className="col-lg-12 col-md-6 col-sm-12 col-xs-12  my-sm-2 mb-lg-2  ">
+                                        <div className="col-lg-12 col-md-6 col-sm-12 col-12  my-sm-2 my-2 mb-lg-2  ">
                                             <img className="small-image box-image" src={require(`../assets/img/6.jpg`).default} width="100%" height="100%" alt="" />
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 
-                                        my-sm-2 ">
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12 
+                                        my-sm-2 my-2 ">
                                             <img className="small-image box-image" src={require(`../assets/img/4.jpg`).default} 
                                             width="100%" height="100%"
                                             alt="" />
                                         </div>
-                                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-sm-2 p-lg-0 pr-lg-3 pl-lg-1  ">
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12 my-sm-2 p-lg-0 pr-lg-3 pl-lg-1 my-2  ">
                                             <img className="small-image box-image" src={require(`../assets/img/1.jpg`).default}
                                             width="100%" height="100%"
                                              alt="" />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6  col-md-6 col-sm-12 col-xs-12 my-sm-2  pl-lg-0 ml-lg-1   ">
+                                <div className="col-lg-6  col-md-6 col-sm-12 col-12 my-sm-2 my-2  pl-lg-0 ml-lg-1   ">
                                     <img  className="small-image box-image" src={require(`../assets/img/3.jpg`).default}
                                     width="100%" height="100%"
                                      alt="" />
@@ -94,7 +94,7 @@ class EventSpacePage extends PureComponent {
                             </div>
 
                         </div>
-                        <div className="col-lg-3 col-md-12 col-xs-12 align-self-center">
+                        <div className="col-lg-3 col-md-12 col-12 align-self-center">
                             <h1 className="text-bold">Space Kitchen</h1>
                             <p className="paragrapgh" >Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugit error repellendus accusamus atque eligendi fugiat tenetur nemo sint distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     <br />
@@ -124,14 +124,14 @@ class EventSpacePage extends PureComponent {
                 </div>
                 <div className="container-fluid my-5 py-5" id="host">
                     <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12  align-self-center order-lg-1 order-md-2  order-sm-2 order-xs-2 mt-sm-5"> 
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-12  align-self-center order-lg-1 order-md-2  order-sm-2 order-xs-2 mt-sm-5"> 
                         <h2 className="text-bold" style={{fontSize:'2.5rem'}} >Еvent Host</h2>
                         <p style={{fontSize:'2.5rem'}}> Ања Макеска</p>
                         <p style={{fontSize:'2.5rem'}}>anja@brainster.co</p>
                         <p style={{fontSize:'2.5rem'}}>+389 (0)70 233 414 </p>
                         </div>
                         
-                        <div className="col-lg-6 col-md-6 col-sm-12  col-xs-12 d-flex justify-content-lg-end  justify-content-md-center order-lg-2 order-md-1 order-sm-1 order-xs-1 ">
+                        <div className="col-lg-6 col-md-6 col-sm-12  col-12 d-flex justify-content-lg-end  justify-content-md-center order-lg-2 order-md-1 order-sm-1 order-xs-1 ">
                             <img src={require('../assets/img/anja.jpg').default} width="100%" height="100%" alt=""/>
                         </div>
                     </div>

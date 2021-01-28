@@ -7,7 +7,7 @@ import {FaHandshake} from 'react-icons/fa'
  
 function SingleCardAcademies({title,img,content,color,link}) {
     return (
-        <div className="col-lg-4 col-md-6 col-sm-12 ">
+        <div className="col-lg-4 col-md-6 col-sm-12 col-12 ">
         <a href={link} target="_blank" rel="noreferrer">
         <Card className="text-white d-flex mb-3 card-lift scale ">
                 <Card.Img className=""  style={{height:'400px'}} src={require(`../assets/img/${img}.jpg`).default} alt="Card image" />

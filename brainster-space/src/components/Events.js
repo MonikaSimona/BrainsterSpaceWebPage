@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 
-function Events() {
-    return (
-        <div className="Events">Календар</div>
-    )
+class Events extends PureComponent {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            
+        }
+    }
+
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+
+    render() {
+        return (
+            <div className="Events">Календар</div>
+        )
+    }
 }
 
 export default Events

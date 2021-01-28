@@ -13,7 +13,7 @@ import React, { PureComponent } from 'react'
 import ModalBootstrap from './ModalBootstrap';
 import JoinForm from './Forms/JoinForm';
 import InovationsForm from './Forms/InovationsForm';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link as NLink } from 'react-router-dom';
 import { Link, Element } from 'react-scroll';
 
 
@@ -23,12 +23,27 @@ class HomePage extends PureComponent {
 
         this.state = {
             isOpen: false,
+            title: 'Компании',
+            img: 'banner_img'
         }
     }
     openModal = () => this.setState({ isOpen: true })
     closeModal = () => this.setState({ isOpen: false });
     handleSubmit = (e) => {
         e.preventDefault();
+    }
+
+    setAcademiesProps = () => {
+        this.setState({
+            title:"Едукација",
+            img:"edukacija1"
+        })
+    }
+    setCompaniesProps = () => {
+        this.setState({
+            title:"Компании",
+            img:"banner_img"
+        })
     }
 
   
@@ -66,14 +81,14 @@ class HomePage extends PureComponent {
                             {this.state.isOpen ? <ModalBootstrap handleClose={this.closeModal} isOpen={this.state.isOpen} handleSubmit={this.handleSubmit} ><InovationsForm /></ModalBootstrap> : null}
                         </div>
                     </CardsContainer>
-                    <SectionImgRight title="Компании" img="banner_img" >
+                    <SectionImgRight title={this.state.title} img={this.state.img} >
 
-                        <button className="black-button mr-2 mb-md-2  mb-sm-2 mb-2 p-2">АКАДЕМИИ</button>
-                        <button className="yellow-button mb-md-2 mb-sm-2 mb-2 p-2">ЗА КОМПАНИИ</button>
+                        <button className="black-button mr-2 mb-md-2  mb-sm-2 mb-2 p-2" onClick={this.setAcademiesProps}>АКАДЕМИИ</button>
+                        <button className="yellow-button mb-md-2 mb-sm-2 mb-2 p-2" onClick={this.setCompaniesProps}>ЗА КОМПАНИИ</button>
                     </SectionImgRight>
                     <CardsContainer title="Настани">
                         <div className="row mb-5">
-                            <SingleCard img="codeworks" title="Codeworks" link="" />
+                            <SingleCard img="codeworks" title="Codeworks" link="https://brainster.co" a={true} />
                             <SingleCard img="instruktori" title="Deep Dive into Marketing" link="https://blog.brainster.co/deep-dive-marketing-davor-bruketa/" a={true} />
                             <SingleCard img="hristijan" title="Deep Dive into Data Science" link="https://blog.brainster.co/deepdive_ds/" a={true} />
                         </div>
@@ -92,16 +107,16 @@ class HomePage extends PureComponent {
                         </Element>
                     </CardsContainer>
                     <SectionImgRight title="Простор за настани" img="prostor_za_nastani">
-                    <NavLink to="/prostor_za_nastani" className="no-link">
+                    <NLink to="/prostor_za_nastani" className="no-link">
                     <button className="black-button p-2 mb-md-2 mb-sm-2 mb-2 d-flex"> <IoArrowForward className="align-self-center mt-1 mr-1" /> ВИДИ ГО ПРОСТОРОТ </button>
-                    </NavLink>
+                    </NLink>
                        
                     </SectionImgRight>
 
                     <BottomBanner title="Партнери" content="Имаш идеја? Отворени сме за соработка">
-                    <NavLink to="/prostor_za_nastani" className="no-link">
+                    <NLink to="/prostor_za_nastani" className="no-link">
                         <button className="black-button p-2 mt-4 " > <IoArrowForward className=" mb-1 " /> ВИДИ ГО ПРОСТОРОТ </button>
-                    </NavLink>
+                    </NLink>
                     </BottomBanner>
                 </div>
 

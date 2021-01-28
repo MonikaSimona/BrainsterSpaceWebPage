@@ -4,6 +4,7 @@ import { FiInstagram } from 'react-icons/fi'
 import { ImLinkedin } from 'react-icons/im'
 import { OverlayTrigger, Popover } from 'react-bootstrap';
 import Logo from './Logo'
+import { NavLink } from 'react-router-dom';
 function Footer() {
     const popover = (
         <Popover>
@@ -23,7 +24,7 @@ function Footer() {
     return (
         <div className="Footer footer absolute-bottom">
             <div className="row mx-5 my-5 py-3">
-                <div className="col-lg-3 col-md-4 col-sm-12  col-xs-12 order-lg-1 order-md-1 order-sm-2 order-xs-2 mb-5 mt-3 ">
+                <div className="col-lg-3 col-md-4 col-sm-12  col-xs-12 order-lg-1 order-md-1 order-sm-2 order-2 mb-5 mt-3 ">
                     <span className="text-bold mb-2  ">Корисни Линкови</span>
                     <ul>
 
@@ -31,19 +32,20 @@ function Footer() {
                             trigger="hover"
                             placement="top"
                             overlay={popover}>
-                            <li style={{ display: 'inline-block' }}>
+                            <li style={{ display: 'inline-block', fontWeight:'bold' }}>
                                 Контакт
                             </li>
                         </OverlayTrigger>
-                        <li>Отворени Позиции</li>
-                        <a href="https://medium.com/wearelaika/brainster-space-the-" target="_blank" rel="noreferrer"className="text">      <li>Галерија</li>
+                        <a href="https://wearelaika.com" target="_blank" rel="noreferrer" className="text" style={{display:'block'}}>
+                        <li>Отворени Позиции</li> </a>
+                        <a href="https://medium.com/wearelaika/brainster-space-the-" target="_blank" rel="noreferrer" className="text">      <li>Галерија</li>
                         </a>
-                        <li>Календар</li>
+                        <NavLink to="/nastani" className="text" style={{display:'block'}}><li>Календар</li></NavLink>
                     </ul></div>
 
 
 
-                <div className="col-lg-3 col-md-4 col-sm-12 col-xs-12 order-lg-2 order-md-2 order-sm-3 order-xs-3 mb-5 mt-3"><span className="text-bold mb-3">Социјални Мрежи</span>
+                <div className="col-lg-3 col-md-4 col-sm-12 col-xs-12 order-lg-2 order-md-2 order-sm-3 order-3 mb-5 mt-3"><span className="text-bold mb-3">Социјални Мрежи</span>
                     <div className="d-flex ">
                         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/brainster.co"><FaFacebook className="icon facebook" /></a>
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/school/brainster-co/"><ImLinkedin className="icon linkedin" /></a>
