@@ -49,7 +49,7 @@ function JoinForm({handleClose,handleSubmit}) {
         </div>
         <div className="form-group d-flex mt-4">
             <button style={{ display: 'inline-block' }} className="ml-auto align-self-center no-button" onClick={handleClose}>ИСКЛУЧИ</button>
-            <button className="ml-3 black-button" type="submit">
+            <button className="ml-3 black-button-navbar" type="submit">
                 <IoArrowForward /> ИСПРАТИ ФОРМА
     </button>
         </div>
