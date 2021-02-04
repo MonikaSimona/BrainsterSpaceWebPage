@@ -3,7 +3,7 @@ import { FaFacebook } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
 import { ImLinkedin } from 'react-icons/im'
 import { OverlayTrigger, Popover } from 'react-bootstrap';
-import Logo from './Logo'
+import Logo from '../Logo'
 import { NavLink } from 'react-router-dom';
 function Footer() {
     const popover = (

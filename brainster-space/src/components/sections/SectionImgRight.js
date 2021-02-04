@@ -14,7 +14,7 @@ function SectionImgRight({ title, img , children}) {
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 
-                    <img className="img-right" src={require(`../assets/img/${img}.jpg`).default} alt="" />
+                    <img className="img-right" src={require(`../../assets/img/${img}.jpg`).default} alt="" />
                 </div>
             </div>
         </div>

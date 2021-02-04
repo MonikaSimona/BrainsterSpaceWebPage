@@ -5,7 +5,6 @@ function CardsContainer({title,children}) {
         <div>
             <h1 className="title text-bold">{title}</h1>
             <div className="container-fluid  mb-5  ">
-        
           {children}
         </div>
         </div>

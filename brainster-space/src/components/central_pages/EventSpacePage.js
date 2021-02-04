@@ -1,6 +1,6 @@
-import CardsContainer from './CardsContainer'
-import SectionImgRight from './SectionImgRight'
-import SingleCardSpace from './SingleCardSpace'
+import CardsContainer from '../cards/CardsContainer'
+import SectionImgRight from '../sections/SectionImgRight'
+import SingleCardSpace from '../cards/SingleCardSpace'
 import {IoMdPlanet} from 'react-icons/io'
 import {IoFastFood} from 'react-icons/io5'
 import {IoIosGlobe} from 'react-icons/io'
@@ -69,25 +69,25 @@ class EventSpacePage extends PureComponent {
                                 <div className="col">
                                     <div className="row">
                                         <div className="col-lg-12 col-md-6 col-sm-12 col-12  my-sm-2 my-2 mb-lg-2  ">
-                                            <img className="small-image box-image" src={require(`../assets/img/6.jpg`).default} width="100%" height="100%" alt="" />
+                                            <img className="small-image box-image" src={require(`../../assets/img/6.jpg`).default} width="100%" height="100%" alt="" />
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-12 
                                         my-sm-2 my-2 ">
-                                            <img className="small-image box-image" src={require(`../assets/img/4.jpg`).default} 
+                                            <img className="small-image box-image" src={require(`../../assets/img/4.jpg`).default} 
                                             width="100%" height="100%"
                                             alt="" />
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-12 my-sm-2 p-lg-0 pr-lg-3 pl-lg-1 my-2  ">
-                                            <img className="small-image box-image" src={require(`../assets/img/1.jpg`).default}
+                                            <img className="small-image box-image" src={require(`../../assets/img/1.jpg`).default}
                                             width="100%" height="100%"
                                              alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6  col-md-6 col-sm-12 col-12 my-sm-2 my-2  pl-lg-0 ml-lg-1   ">
-                                    <img  className="small-image box-image" src={require(`../assets/img/3.jpg`).default}
+                                    <img  className="small-image box-image" src={require(`../../assets/img/3.jpg`).default}
                                     width="100%" height="100%"
                                      alt="" />
                                 </div>
@@ -132,7 +132,7 @@ class EventSpacePage extends PureComponent {
                         </div>
                         
                         <div className="col-lg-6 col-md-6 col-sm-12  col-12 d-flex justify-content-lg-end  justify-content-md-center order-lg-2 order-md-1 order-sm-1 order-xs-1 ">
-                            <img src={require('../assets/img/anja.jpg').default} width="100%" height="100%" alt=""/>
+                            <img src={require('../../assets/img/anja.jpg').default} width="100%" height="100%" alt=""/>
                         </div>
                     </div>
                 </div>

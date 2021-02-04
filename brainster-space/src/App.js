@@ -1,12 +1,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import HomePage from './components/HomePage';
-import AcadamiesPage from './components/AcadamiesPage';
-import EventSpacePage from './components/EventSpacePage';
-import Events from './components/Events';
+import Navbar from './components/sections/Navbar';
+import Footer from './components/sections/Footer';
+import HomePage from './components/central_pages/HomePage';
+import AcadamiesPage from './components/central_pages/AcadamiesPage';
+import EventSpacePage from './components/central_pages/EventSpacePage';
+import Events from './components/central_pages/Events';
 import { IoArrowUpOutline } from 'react-icons/io5';
 
 import React, { PureComponent } from 'react'

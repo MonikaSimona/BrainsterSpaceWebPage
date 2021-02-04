@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom'
-import Logo from './Logo'
+import Logo from '../Logo'
 
 import React, { PureComponent } from 'react'
-import ModalBootstrap from './ModalBootstrap'
-import JoinForm from './Forms/JoinForm'
+import ModalBootstrap from '../modal_and_forms/ModalBootstrap'
+import JoinForm from '../modal_and_forms/JoinForm'
 import { Link } from 'react-scroll'
 
 

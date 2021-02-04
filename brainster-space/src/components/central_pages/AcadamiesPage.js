@@ -1,7 +1,7 @@
 import React from 'react'
-import CardsContainer from './CardsContainer'
-import SectionImgRight from './SectionImgRight'
-import SingleCardAcademies from './SingleCardAcademies'
+import CardsContainer from '../cards/CardsContainer'
+import SectionImgRight from '../sections/SectionImgRight'
+import SingleCardAcademies from '../cards/SingleCardAcademies'
 
 function AcadamiesPage() {
     return (
