@@ -24,7 +24,12 @@ class HomePage extends PureComponent {
         this.state = {
             isOpen: false,
             title: 'Компании',
-            img: 'banner_img'
+            img: 'banner_img',
+            content: 'Компаниите имаат можност да ги надоградат своите тимови, а со тоа да го подобрат перформансот на својата компанија.'+
+
+            'Дигиталната трансформација се случува, а вашите компании треба да бидат подготвени за да се адаптираат соодветно. Обуки, семинари, курсеви или team building?'+
+            
+            'Во Brainster Space имаме специјално обучен тим кој е подготвен да ја насочи, адаптира и сподели својата експертиза со денешните потреби на компаниите.'
         }
     }
     openModal = () => this.setState({ isOpen: true })
@@ -36,13 +41,19 @@ class HomePage extends PureComponent {
     setAcademiesProps = () => {
         this.setState({
             title:"Едукација",
-            img:"edukacija1"
+            img:"edukacija1",
+            content: 'Дали се подготвен да одговориш на потребите на иднината. Вистинските курсеви, академии и семинари кои ќе ти овозможат кариерна трансформација во областа дигитален маркетинг, дизајн, програмирање и Data Science.'
         })
     }
     setCompaniesProps = () => {
         this.setState({
             title:"Компании",
-            img:"banner_img"
+            img:"banner_img",
+            content: 'Компаниите имаат можност да ги надоградат своите тимови, а со тоа да го подобрат перформансот на својата компанија.'+
+
+            'Дигиталната трансформација се случува, а вашите компании треба да бидат подготвени за да се адаптираат соодветно. Обуки, семинари, курсеви или team building?'+
+            
+            'Во Brainster Space имаме специјално обучен тим кој е подготвен да ја насочи, адаптира и сподели својата експертиза со денешните потреби на компаниите.'
         })
     }
 
@@ -94,7 +105,7 @@ class HomePage extends PureComponent {
                             </div>
                         </div>
                     </CardsContainer>
-                    <SectionImgRight title={this.state.title} img={this.state.img} >
+                    <SectionImgRight title={this.state.title} img={this.state.img} content={this.state.content} >
 
                         <button className="black-button mr-2 mb-md-2  mb-sm-2 mb-2 p-2" onClick={this.setAcademiesProps}>АКАДЕМИИ</button>
                         <button className="yellow-button mb-md-2 mb-sm-2 mb-2 p-2" onClick={this.setCompaniesProps}>ЗА КОМПАНИИ</button>
@@ -124,7 +135,7 @@ class HomePage extends PureComponent {
                         </div>
 
                         <Element id="#coworking" name="#coworking">
-                            <SectionImgLeft title="Coworking" img="coworking" >
+                            <SectionImgLeft title="Coworking" img="coworking"  content="Биди дел од tech заедницата на иноватори, креативци и претприемачи. Резервирај стол во нашата shared office. Пичирај го твојот бизнис и нашиот тим заедно ке одлучи секој месец со кого да ги дели своите канцеларии.">
                                 <OverlayTrigger trigger="click" placement="bottom"
                                     overlay={popover}>
                                     <button className="black-button mr-2 p-2 text-linetrough btn-linetrough mb-md-2 mb-sm-2 mb-2">РЕЗЕРВИРАЈ МЕСТО</button>
