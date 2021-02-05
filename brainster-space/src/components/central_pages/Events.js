@@ -1,23 +1,19 @@
-import React, { PureComponent } from 'react'
+import React, { useState } from 'react'
+import moment from 'moment'
+import Calendar from '../events_calendar/calendar'
+import '../events_calendar/calendar/styles.css'
 
-class Events extends PureComponent {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            
-        }
-    }
-
-    componentDidMount(){
-        window.scrollTo(0,0);
-    }
-
-    render() {
-        return (
-            <div className="Events">Календар</div>
-        )
-    }
+const Events = () => {
+    const [selectedDate, setSelectedDate] = useState(moment());
+  console.log(selectedDate);
+    return ( 
+    <div className="Events">
+    <h2 className="text-bold">Календар</h2>
+    <Calendar value={selectedDate} onChange={setSelectedDate} />
+    </div> );
 }
+ 
+export default Events;
 
-export default Events
+
