@@ -1,0 +1,19 @@
+{
+  "name": "brainster-space",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonikaSimona/BrainsterSpaceWebPage.git"
+  },
+  "author": "MonikaSimona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonikaSimona/BrainsterSpaceWebPage/issues"
+  },
+  "homepage": "https://github.com/MonikaSimona/BrainsterSpaceWebPage#readme"
+}
