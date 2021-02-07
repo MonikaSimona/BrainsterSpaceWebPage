@@ -143,7 +143,7 @@ class HomePage extends PureComponent {
                             </SectionImgLeft>
                         </Element>
                     </CardsContainer>
-                    <SectionImgRight title="Простор за настани" img="prostor_za_nastani">
+                    <SectionImgRight title="Простор за настани" img="prostor_za_nastani" content="Можност за презентации, обуки, конференции, networking настани. Одбери ја просторијата која најмногу ќе одговара на твојата идеја. Го задржуваме правото да одбереме кој настан ќе се организира го нашиот Brainster Space.">
                     <NLink className="card-link" to="/prostor_za_nastani" >
                     <button className="black-button p-2 mb-md-2 mb-sm-2 mb-2 d-flex"> <IoArrowForward className="align-self-center mt-1 mr-1" /> ВИДИ ГО ПРОСТОРОТ </button>
                     </NLink>
